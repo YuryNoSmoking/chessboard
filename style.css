@@ -1,38 +1,42 @@
-body {
+.chessboard {
+  border: 3px solid black;
+  width: 95vmin;
+  margin: auto;
+}
+.chessboard-line1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  width: 95vmin;
+  margin: auto;
 }
 
-.chessboard-border {
-  width: 2100px;
-  height: 2100px;
-  background-color: gray;
-  border: 5px solid black;
+.chessboard-line2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 95vmin;
+  margin: auto;
 }
-
-.inner-border {
-  width: 2000px;
-  height: 2000px;
-  border: 5px solid black;
-}
-.line {
-  height: 250px;
-  display: flex;
-}
-
 .square {
-  width: 250px;
+  width: 12.5%;
+  padding-bottom: 12.5%;
+  box-sizing: border-box; /* Include padding in the total width */
 }
 
-.white {
-  background-color: white;
+.square:nth-child(1n) {
+  background-color: #eee;
 }
 
-.black {
-  background-color: black;
+.square:nth-child(2n) {
+  background-color: #444;
+}
+
+.square-line2 {
+  width: 12.5%;
+  padding-bottom: 12.5%;
+  box-sizing: border-box; /* Include padding in the total width */
+}
+.square-line2:nth-child(1n) {
+  background-color: #444;
+}
+
+.square-line2:nth-child(2n) {
+  background-color: #eee;
 }
