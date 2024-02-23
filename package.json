@@ -1,0 +1,14 @@
+{
+  "name": "chess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fuck": "echo 'say hey'"
+  },
+  "author": "YuryShevtsov",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.2.5"      
+  }
+}
